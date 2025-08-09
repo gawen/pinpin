@@ -7,9 +7,14 @@ Go. Il permet de téléverser directement sur l’enceinte vos **fichiers audio
 personnels** (musique, histoires, podcasts libres de droits, etc.).
 
 Nécessite :
+- Go 1.24.3+
 - ffmpeg
 
 ## Utilisation
+
+```bash
+go install github.com/gawen/pinpin/cmd/pinpin@latest
+```
 
 ```bash
 # Créer un dossier qui contiendra votre arborescence de fichiers Pinpin.
@@ -32,7 +37,7 @@ Perro.mp3
 
 # Enfin, exécutez Pinpin et suivez les instructions.
 $ cd ../../
-$ go run ./path/to/pinpin/cmd mes_fichiers_pinpin
+$ ${GOPATH}/bin/pinpin mes_fichiers_pinpin
 ```
 
 ## Légal
